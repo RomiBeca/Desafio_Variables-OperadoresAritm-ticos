@@ -1,4 +1,4 @@
-// console.log("esto es una prueba ¡si funciono! ")
+
 // diagrama
 
 // operaciones matematicas
@@ -45,6 +45,44 @@ function modulo() {
 }
 
 //temperaturas
+function transformando() {
+    let ingresaCelsius = parseFloat(document.getElementById("celsius").value);
 
+    let fahrenheit1 = (ingresaCelsius * 9 / 5) + 32;
+    let kelvin1 = ingresaCelsius + 273.15;
+
+
+    document.getElementById("fahrenheit").value = fahrenheit1;
+    document.getElementById("kelvin").value = kelvin1;
+
+}
 //dias a años
+function convertirDias() {
+    let diasIn = parseFloat(document.getElementById("diasIn").value);
+
+    let añosOut = Math.floor(diasIn / 365)
+    let diasRestantes = diasIn % 365
+    let semanasOut = Math.floor(diasRestantes / 7)
+    let diasOut = diasRestantes % 7
+
+
+    document.getElementById("años").value = añosOut;
+    document.getElementById("semanas").value = semanasOut;
+    document.getElementById("diasOut").value = diasOut;
+
+}
+
 //5 numeros del usuario, suma y promedio
+function resultadoNumerales() {
+    let valorUno = parseFloat(document.getElementById("numeroUno").value);
+    let ValorDos = parseFloat(document.getElementById("numeroDos").value);
+    let valorTres = parseFloat(document.getElementById("numeroTres").value);
+    let valorCuatro = parseFloat(document.getElementById("numeroCuatro").value);
+    let valorCinco = parseFloat(document.getElementById("numeroCinco").value);
+
+    let sumar2 = valorUno + ValorDos + valorTres + valorCuatro + valorCinco;
+    let promedio1 = (valorUno + ValorDos + valorTres + valorCuatro + valorCinco) / 5;
+
+    document.getElementById("resultadoSuma").value = sumar2
+    document.getElementById("resultadoPromedio").value = promedio1
+}
