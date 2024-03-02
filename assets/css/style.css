@@ -9,11 +9,16 @@ h2 {
     text-align: center;
     text-decoration: underline;
     font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
     text-align: start;
+}
 
+.btn {
+    font-weight: 600;
 }
 
 /* operaciones matematicas  */
@@ -26,8 +31,3 @@ h3 {
 .boxTemperatura {
     margin-left: 500px;
 }
-
-/* De dias a años,semanas y dias restantes  */
-
-
-/* 5 digitos sumatoria y promedio  */

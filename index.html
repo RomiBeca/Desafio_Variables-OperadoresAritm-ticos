@@ -24,174 +24,170 @@
         <h1 class="text-center display-1 fw-semibold">Desafio Guiado </h1>
     </header>
     <main>
-        <!-- diagrama -->
         <section class="pt-5 ">
             <h2>Diagrama de Flujo</h2>
-            <div class=" text-center p-5 flex-container">
+            <div class=" text-center p-5 container">
                 <img src="./assets/img/diagrama de flujo operaciones matematicas.png" alt="imagen de diagrama de flujo"
                     width="900px" class="diagrama">
             </div>
         </section>
-        <!-- operaciones matematicas  -->
         <section>
             <h2> Operaciones Matematicas </h2>
             <article class="container boxOperaciones">
                 <h3>Suma</h3>
                 <div>
                     <label for="numero1"></label>
-                    <input type="number" id="numero1">
+                    <input class="text-center" type="number" id="numero1">
 
                     <label for="numero2">+</label>
-                    <input type="number" id="numero2">
+                    <input class="text-center" type="number" id="numero2">
 
                     <button class="btn btn-warning" onclick="sumar()">=</button>
 
                     <label for="resultado1">Resultado:</label>
-                    <input type="number" id="resultado1" readonly>
+                    <input class="text-center" type="number" id="resultado1" readonly>
                 </div>
 
                 <h3>Resta</h3>
 
                 <div>
                     <label for="numero3"></label>
-                    <input type="number" id="numero3">
+                    <input class="text-center" type="number" id="numero3">
 
                     <label for="numero4">-</label>
-                    <input type="number" id="numero4">
+                    <input class="text-center" type="number" id="numero4">
 
                     <button class="btn btn-warning" onclick="resta()">=</button>
 
                     <label for="resultado2">Resultado:</label>
-                    <input type="number" id="resultado2" readonly>
+                    <input class="text-center" type="number" id="resultado2" readonly>
                 </div>
                 <h3>Multiplicacion</h3>
                 <div>
                     <label for="numero5"></label>
-                    <input type="number" id="numero5">
+                    <input class="text-center" type="number" id="numero5">
 
                     <label for="numero6">*</label>
-                    <input type="number" id="numero6">
+                    <input class="text-center" type="number" id="numero6">
 
                     <button class="btn btn-warning" onclick="multiplicacion()">=</button>
 
                     <label for="resultado3">Resultado:</label>
-                    <input type="number" id="resultado3" readonly>
+                    <input class="text-center" type="number" id="resultado3" readonly>
                 </div>
                 <h3>Division</h3>
                 <div>
                     <label for="numero7"></label>
-                    <input type="number" id="numero7">
+                    <input class="text-center" type="number" id="numero7">
 
                     <label for="numero8">/</label>
-                    <input type="number" id="numero8">
+                    <input class="text-center" type="number" id="numero8">
 
                     <button class="btn btn-warning" onclick="division()">=</button>
 
                     <label for="resultado4">Resultado:</label>
-                    <input type="number" id="resultado4" readonly>
+                    <input class="text-center" type="number" id="resultado4" readonly>
                 </div>
                 <h3>Modulo</h3>
                 <div>
                     <label for="numero9"></label>
-                    <input type="number" id="numero9">
+                    <input class="text-center" type="number" id="numero9">
 
                     <label for="numero10">%</label>
-                    <input type="number" id="numero10">
+                    <input class="text-center" type="number" id="numero10">
 
                     <button class="btn btn-warning" onclick="modulo()">=</button>
 
                     <label for="resultado5">Resultado:</label>
-                    <input type="number" id="resultado5" readonly>
+                    <input class="text-center" type="number" id="resultado5" readonly>
                 </div>
             </article>
         </section>
-        <!-- temperaturas  -->
         <section>
             <h2 class="mt-5">Temperaturas</h2>
             <article class=" container text-star boxTemperatura">
                 <div class="mb-3">
                     <h4>Ingresa la t° en grados celsius</h4>
                     <label for="celsius"></label>
-                    <input class="mt-2" type="number" name="grados celsius" id="celsius" class="text-center"
+                    <input class="mt-2 text-center" type="number" name="grados celsius" id="celsius" class="text-center"
                         placeholder="°C">
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-warning my-1 " onclick="transformando()">Transformar</button>
                     <div class="my-2">
                         <label for="fahrenheit">Grados Fahrenheit</label>
-                        <input type="number" name="grados fahrenheit" id="fahrenheit" readonly placeholder="°F">
+                        <input class="text-center" type="number" name="grados fahrenheit" id="fahrenheit" readonly
+                            placeholder="°F">
                     </div>
                     <div>
                         <label for="kelvin">Grados kelvin</label>
-                        <input type="number" name="grados kelvin" id="kelvin" readonly placeholder="K">
+                        <input class="text-center" type="number" name="grados kelvin" id="kelvin" readonly
+                            placeholder="K">
                     </div>
                 </div>
             </article>
         </section>
-        <!-- dia a años  -->
         <section>
             <h2>Dias a años,semanas,dias</h2>
-            <div>
-                <div class="container text-center">
-                    <div>
-                        <h4>Ingresa n° de dias</h4>
-                        <label for="diasIn"></label>
-                        <input type="number" name="diasIn" id="diasIn" class="text-center" placeholder="365">
-                    </div>
-
-                    <div>
-                        <button class="btn btn-warning mt-3" onclick="convertirDias()"> ¡¡Cambio!!</button>
-                    </div>
-
-                    <article class="contenidoDias caja1">
-                        <div class="conversion">
-                            <h4>Años </h4>
-                            <label for="años"></label>
-                            <input type="number" name="años" id="años" readonly>
-                        </div>
-                        <div class="conversion">
-                            <h4>Semanas</h4>
-                            <label for="semanas"></label>
-                            <input type="number" name="semanas" id="semanas" readonly>
-                        </div>
-                        <div class="conversion">
-                            <h4>dias</h4>
-                            <label for="diasOut"></label>
-                            <input type="number" name="diasOut" id="diasOut" readonly>
-                        </div>
-                    </article>
+            <article class="container text-center">
+                <div>
+                    <h4>Ingresa n° de dias</h4>
+                    <label for="diasIn"></label>
+                    <input class="text-center" type="number" name="diasIn" id="diasIn" placeholder="365">
                 </div>
+                <div>
+                    <button class="btn btn-warning my-3" onclick="convertirDias()"> ¡¡Cambio!!</button>
+                </div>
+                <div>
+                    <div>
+                        <h4>Años </h4>
+                        <label for="años"></label>
+                        <input class="text-center" type="number" name="años" id="años" readonly>
+                    </div>
+                    <div>
+                        <h4>Semanas</h4>
+                        <label for="semanas"></label>
+                        <input class="text-center" type="number" name="semanas" id="semanas" readonly>
+                    </div>
+                    <div>
+                        <h4>dias</h4>
+                        <label for="diasOut"></label>
+                        <input class="text-center" type="number" name="diasOut" id="diasOut" readonly>
+                    </div>
+                </div>
+            </article>
         </section>
-        <!-- five number  -->
-        <section id="fiveNumber " class="">
-            <h2>usuario ingresa 5 numeros</h2>
-            <div class="numerales5">
-                <label for="numeroUno"></label>
-                <input type="number" name="" id="numeroUno">
-                <label for="numeroDos"></label>
-                <input type="number" name="" id="numeroDos">
-                <label for="numeroTres"></label>
-                <input type="number" name="" id="numeroTres">
-                <label for="numeroCuatro"></label>
-                <input type="number" name="" id="numeroCuatro">
-                <label for="numeroCinco"></label>
-                <input type="number" name="" id="numeroCinco">
-            </div>
-            <div>
-                <button class="btn btn-warning" onclick="resultadoNumerales()">Resultado</button>
-            </div>
-            <div class="resultado1">
+        <section>
+            <h2>Usuario ingresa 5 numeros</h2>
+            <article class="container">
                 <div>
-                    <h4>Sumatoria / </h4>
-                    <label for="resultadoSuma"></label>
-                    <input type="number" name="" id="resultadoSuma" readonly>
+                    <label for="numeroUno"></label>
+                    <input class="text-center" type="number" name="" id="numeroUno">
+                    <label for="numeroDos"></label>
+                    <input class="text-center" type="number" name="" id="numeroDos">
+                    <label for="numeroTres"></label>
+                    <input class="text-center" type="number" name="" id="numeroTres">
+                    <label for="numeroCuatro"></label>
+                    <input class="text-center" type="number" name="" id="numeroCuatro">
+                    <label for="numeroCinco"></label>
+                    <input class="text-center" type="number" name="" id="numeroCinco">
                 </div>
-                <div>
-                    <h4> Promedio</h4>
-                    <label for="resultadoPromedio"></label>
-                    <input type="number" name="" id="resultadoPromedio" readonly>
+                <div class="text-center my-3">
+                    <button class="btn btn-warning" onclick="resultadoNumerales()">Resultado</button>
                 </div>
-            </div>
+                <div class="text-center">
+                    <div>
+                        <h4>Sumatoria</h4>
+                        <label for="resultadoSuma"></label>
+                        <input class="text-center" type="number" name="" id="resultadoSuma" readonly>
+                    </div>
+                    <div>
+                        <h4> Promedio</h4>
+                        <label for="resultadoPromedio"></label>
+                        <input class="text-center" type="number" name="" id="resultadoPromedio" readonly>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="bg-dark text-light p-3 mt-5">
