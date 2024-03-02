@@ -69,12 +69,12 @@ function convertirDias() {
 //5 numeros del usuario, suma y promedio
 function resultadoNumerales() {
     let valorUno = parseFloat(document.getElementById("numeroUno").value);
-    let ValorDos = parseFloat(document.getElementById("numeroDos").value);
+    let valorDos = parseFloat(document.getElementById("numeroDos").value);
     let valorTres = parseFloat(document.getElementById("numeroTres").value);
     let valorCuatro = parseFloat(document.getElementById("numeroCuatro").value);
     let valorCinco = parseFloat(document.getElementById("numeroCinco").value);
-    let sumar2 = valorUno + ValorDos + valorTres + valorCuatro + valorCinco;
-    let promedio1 = (valorUno + ValorDos + valorTres + valorCuatro + valorCinco) / 5;
+    let sumar2 = valorUno + valorDos + valorTres + valorCuatro + valorCinco;
+    let promedio1 = (valorUno + valorDos + valorTres + valorCuatro + valorCinco) / 5;
 
     document.getElementById("resultadoSuma").value = sumar2
     document.getElementById("resultadoPromedio").value = promedio1
